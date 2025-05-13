@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Helvetica+Neue&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: inline-block; 
+  width: 1920px;
+  background: white;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1920px;
+  padding-right: 5px;
+  background: #373a3c;
+  border-radius: 4px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 1069px;
+  height: 60px;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  width: 96px;
+  height: 29px;
+  vertical-align: middle;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  min-width: 686px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-link {
+  font: 400 16px/16px 'Open Sans', sans-serif;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link.muted {
+  color: rgba(255, 255, 255);
+}
+
+.nav-link:hover {
+  color: #CCCCCC;
+}
+
+.nav-link.muted:hover {
+  color: #999999;
+}
+
+.account-link {
+  text-decoration: none;
+}
+
+.account-link:hover .nav-text {
+  color: #CCCCCC;
+}
+
+.icon-small {
+  width: 12px;
+  height: 7px;
+  gap: 10px;
+  transition: opacity 0.2s ease;
+}
+
+.icon-medium {
+  width: 20px;
+  height: 20px;
+  transition: opacity 0.2s ease;
+}
+
+.search-container {
+  position: relative;
+  width: 209px;
+  height: 38px;
+}
+
+.search-input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px 10px 20px;
+  font: 16px 'Open Sans', sans-serif;
+  color: #435766;
+  background: white;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.search-input::placeholder {
+  color: #435766;
+}
+
+
+.primary-content-container {
+  position: relative;
+  height: 600px;
+  background: url('assets/Star-Wars-Battlefront-II-combat.png') center/cover no-repeat;
+  display: flex;
+}
+
+.game-content-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+}
+
+.game-info-container {
+  color: white;
+  max-width: 1920px;
+}
+
+.game-title {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-left: 831px;
+}
+
+.game-subtitle {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-left: 831px;
+}
+
+.game-buttons-container {
+  display: flex;
+  gap: 15px;
+  margin-left: 831px;
+}
+
+.trailer-button {
+  background: #8dd83d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.explore-button {
+  background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.trailer-button:hover, .explore-button:hover {
+  opacity: 0.9;
+}
